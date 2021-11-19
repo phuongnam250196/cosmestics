@@ -1,0 +1,244 @@
+@import "chitietsp.scss";
+// Danh muc san pham
+#danhsach_sp {
+	@extend #chitiet_sp;
+	.img-danhmuc {
+		img {
+			width: 100%;
+		}
+	}
+	.tieu-de-nhomtin {
+		margin-top: 20px;
+		.d-flex {
+				h1 {
+				font-size: 16px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				margin-top: 7px;
+			}
+			.nhom-tin-sx {
+				.dropdown {
+					
+					button {
+						background:none;
+						border: $vien;
+						padding: 5px;
+					}
+					.dropdown-menu {
+						min-width: 100%;
+						background:$dotim;
+						color: white;
+						a {
+							padding: 0;
+							color: white;
+							font-size: 14px;
+							text-align: center;
+							&:hover {
+								background:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.chitiet_sp_l_2 {
+		.media {
+			.media-body {
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-left: 15px;
+				p {
+					margin-bottom: 0;
+				}
+				.chitiet_sp_l_gia_sp {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	
+	.chitiet_sp_r_5 {
+		.banchay-sp {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background:white;
+			.row {
+				.col-sm-3 {
+					.card {
+						background:white;
+					}
+				}
+			}
+		}
+	}
+	.paginate {
+		margin-top: 20px;
+		ul {
+			margin: 0 auto;
+			li {
+				padding: 5px;
+				a {
+					color: #333;
+				}
+			}
+		}
+	}
+}
+.owl-carousel.owl-all {
+    position: relative;
+    button.owl-prev {
+        position: absolute;
+        left: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+    button.owl-next {
+        position: absolute;
+        right: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+}
+// Enh danh muc san pham
+
+// Responsive
+@media (max-width: 1199.98px) {
+	#danhsach_sp {
+		.chitiet_sp_l_2 {
+			.media {
+				.media-body {
+				   padding-left: 0;
+				   iframe {
+					    width:  178px;
+					}
+					p {
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	#dieuhuong-link {
+		.nav-ul {
+			li {
+				.sub-menu-tintuc {
+    				width: 150%;
+    				li {
+    					padding-left: 5px;
+    				}
+    			}
+    		}
+    	}
+	}
+}
+@media (max-width: 991.98px) {
+	#dieuhuong-link {
+		.nav-ul {
+			li {
+				.sub-menu {
+    				width: 120%;
+    				li {
+    					padding-left: 15px;
+    				}
+    			}
+    			.sub-menu-tintuc {
+    				width: 230%;
+    				li {
+    					padding-left: 5px;
+    				}
+    			}
+    		}
+    	}
+	}
+
+}
+@media (max-width: 767.98px) {
+	#dieuhuong-link {
+		.nav-ul {
+			li {
+				.sub-menu {
+    				width: 100%;
+    				li {
+    					padding-left: 15px;
+    				}
+    			}
+    			.sub-menu-tintuc {
+    				width: 100%;
+    				li {
+    					padding-left: 5px;
+    				}
+    			}
+    		}
+    	}
+	}
+	#danhsach_sp {
+		.chitiet_sp_l_2 {
+			.media {
+				margin-right: 5px;
+				.media-body {
+				   padding-left: 0;
+				   iframe {
+					    width:  160px;
+					}
+					p {
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	#banchay-sp .banchay-sp .row span, #chitiet_sp .chitiet_sp_r_5 .banchay-sp .row span, #danhsach_sp .chitiet_sp_r_5 .banchay-sp .row span, #chitiet_sp .chitiet_sp_r_5 .banchay-sp .row span, #danhsach_sp .chitiet_sp_r_5 .banchay-sp .row span, #danhsach_sp .chitiet_sp_r_5 .banchay-sp .row span {
+    	font-size: 8px;
+	}
+	
+}
+@media (max-width: 575.98px) {
+	.owl-carousel.owl-all {
+	    position: relative;
+	    button.owl-prev {
+	       
+	        span {
+	           display: none;
+	        }
+	    }
+	    button.owl-next {
+	        
+	        span {
+	             display: none;
+	        }
+	    }
+	}
+	#danhsach_sp {
+		.chitiet_sp_l_2 {
+			.media {
+				.media-body {
+				   padding-left: 0;
+				   iframe {
+					    width:  256px;
+					}
+				}
+			}
+		}
+	}
+
+}
+	
+// End responsive

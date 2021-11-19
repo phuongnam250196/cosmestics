@@ -1,0 +1,77 @@
+// Lien he
+#link-trang {
+	background:#ebebeb;
+	.breadcrumb {
+		padding-left: 0;
+		li {
+			a {
+				color: #333;
+			}
+		}
+	}
+}
+
+#lienhe {
+	.lienhe-l {
+		padding-left: 20px;
+		padding-right: 10px;
+		.lienhe-tieude {
+			h1 {
+				a {
+					color: #333;
+					font-size: 20px;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+			}
+			.lienhe-address {
+				p {
+					margin-bottom:0px;
+					font-size: 16px;
+					&:last-child {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+
+	.lienhe-r {
+		border: 1px solid #ddd;
+		padding: 15px;
+		.lienhe-r-tieude {
+			h4 {
+				color: #333;
+				font-size: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+		}
+		label {
+			font-size: 16px;
+			span {
+				color: red;
+			}
+		}
+		.form-group {
+			margin-bottom: 20px;
+			.form-control {
+				border-radius: 0;
+			}
+			.area {
+				height: 95px;
+			}
+		}
+		.lienhe-input {
+			button {
+				color: white;
+				background: #ff0000;
+				border: none;
+				padding: 5px 20px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+// End lien he

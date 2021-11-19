@@ -1,0 +1,185 @@
+@import "chitiet_tinsp.scss";
+#chitiet_sp {
+	.row {
+		.col-lg-9 {
+
+			.nhom-tin {
+				
+				.tieu-de-nhomtin {
+					.d-flex {
+							h1 {
+							font-size: 25px;
+							text-transform: uppercase;
+							font-weight: bold;
+						}
+						.nhom-tin-sx {
+							.dropdown {
+								
+								button {
+									background:none;
+									border: $vien;
+									padding: 5px;
+								}
+								.dropdown-menu {
+									min-width: 100%;
+								}
+							}
+						}
+					}
+				}
+				.media {
+					padding-bottom: 20px;
+					padding-top: 20px;
+					border-bottom: $vien;
+					.media-body {
+						margin-left: 15px;
+						h4 {
+							font-size: 16px;
+							font-weight: bold;
+							margin-bottom: 0;
+							a {
+								color: #333;
+							}
+						}
+						.n {
+							p {
+								margin-bottom: 5px;
+								text-align: justify;
+								&:first-child {
+									font-size: 12px;
+								}
+								&:last-child {
+									line-height: 20px;
+								}
+							}
+						}
+						a {
+							color: red;
+						}
+					}
+				}
+				.paginate {
+					margin: 0 auto;
+					margin-top: 20px;
+					ul {
+						li {
+							padding: 5px;
+							a {
+								color: #333;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.owl-carousel.owl-all {
+    position: relative;
+    button.owl-prev {
+        position: absolute;
+        left: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+    button.owl-next {
+        position: absolute;
+        right: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+}
+// Responsive
+@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {
+	#chitiet_sp {
+		.row {
+			.col-lg-9 {
+				.nhom-tin {
+					.media {
+					   display: inherit;
+					   img {
+					   	width: 100%;
+					   }
+					   .media-body {
+					   	margin-left: 0;
+					   	padding-top: 20px;
+					   }
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	#chitiet_sp {
+		.chitiet_sp_l_2 {
+			.media {
+			    display: inherit;
+			    text-align: center;
+			    .media-body {
+					text-align: left;
+					iframe {
+						width: 160px;
+					}
+			    }
+
+			}
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	#chitiet_sp {
+		.chitiet_sp_l_2 {
+			.media {
+			    display: flex;
+			    text-align: center;
+			    .media-body {
+					// text-align: justify;
+					iframe {
+						width: 160px;
+					}
+			    }
+
+			}
+		}
+	}
+}
+@media (max-width: 460px) {
+	#chitiet_sp {
+		.col-6 {
+			flex: 0 0 100%;
+			 max-width: 100%;
+		}
+		.chitiet_sp_l_2 {
+			.media {
+			    display: flex;
+			    .media-body {
+					iframe {
+						width: 100%;
+					}
+			    }
+
+			}
+		}
+	}
+}
+
+// End responsive

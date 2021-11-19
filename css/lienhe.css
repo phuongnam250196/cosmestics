@@ -1,0 +1,47 @@
+#link-trang {
+  background: #ebebeb; }
+  #link-trang .breadcrumb {
+    padding-left: 0; }
+    #link-trang .breadcrumb li a {
+      color: #333; }
+
+#lienhe .lienhe-l {
+  padding-left: 20px;
+  padding-right: 10px; }
+  #lienhe .lienhe-l .lienhe-tieude h1 a {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #lienhe .lienhe-l .lienhe-tieude .lienhe-address p {
+    margin-bottom: 0px;
+    font-size: 16px; }
+    #lienhe .lienhe-l .lienhe-tieude .lienhe-address p:last-child {
+      margin-bottom: 25px; }
+#lienhe .lienhe-r {
+  border: 1px solid #ddd;
+  padding: 15px; }
+  #lienhe .lienhe-r .lienhe-r-tieude h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  #lienhe .lienhe-r label {
+    font-size: 16px; }
+    #lienhe .lienhe-r label span {
+      color: red; }
+  #lienhe .lienhe-r .form-group {
+    margin-bottom: 20px; }
+    #lienhe .lienhe-r .form-group .form-control {
+      border-radius: 0; }
+    #lienhe .lienhe-r .form-group .area {
+      height: 95px; }
+  #lienhe .lienhe-r .lienhe-input button {
+    color: white;
+    background: #ff0000;
+    border: none;
+    padding: 5px 20px;
+    font-size: 16px; }
+
+/*# sourceMappingURL=lienhe.css.map */

@@ -1,0 +1,790 @@
+@import "css.scss";
+$dotim: #8e1943;
+$vien: 1px solid #ddd;
+
+// breadcrumb
+#link-trang {
+	background:#ebebeb;
+	.breadcrumb {
+		padding-left: 0;
+		li {
+			a {
+				color: #333;
+			}
+		}
+	}
+}
+// End breadcrumb
+
+
+// chi tiết sản phẩm
+#chitiet_sp {
+	.chitiet_sp_l_1 {
+		margin-bottom: 30px;
+		border: $vien;
+		.tieude-sp {
+			h3 {
+				font-size: 16px;
+				// text-align: center;
+				padding-left: 15px;
+				text-transform: uppercase;
+				padding-top: 10px;
+				margin-bottom: 10px;
+			}
+			hr {
+				margin-left: 15px;
+				margin-top: 0;
+				margin-bottom: 0;
+				width: 25%;
+				height: 2px;
+				background: $dotim;
+			}
+		}
+		#accordion {
+			.card {
+				border: none;
+				background:none;
+				.card-header {
+					border: none;
+					background:none;
+					padding: 0;
+					margin-left: 15px;
+					margin-right: 15px;
+					&:first-child {
+						border-radius:0;
+					}
+					a {
+						font-size: 16px;
+						color: #333;
+						height: 40px;
+						line-height: 40px;
+						&:actived {
+							color: $dotim;
+						}
+					}
+				}
+				#collapseOne {
+					ul {
+						list-style: none;
+						
+						margin-bottom: 0;
+						li {
+							padding-left: 20px;
+							margin-left: 15px;
+							margin-right: 15px;
+							border-bottom: $vien;
+							height: 40px;
+							line-height: 40px;
+							 a {
+								color: #333;
+								font-size: 14px;
+							 }
+							 &:first-child {
+							 	border-top: $vien;
+							 }
+						}
+					}
+				}
+				#collapseTwo {
+					@extend #collapseOne;
+				}
+			}
+		}
+	}
+
+	.chitiet_sp_l_2 {
+		margin-bottom: 30px;
+		@extend .chitiet_sp_l_1;
+		.media {
+			margin: 0px 15px;
+			margin-top: 10px;
+			a {
+				color: #333;
+				p {
+					margin-left: 15px;
+					font-size: 14px;
+					margin-bottom: 0;
+					line-height: 20px;
+				}
+			}
+			&:last-child {
+				margin-bottom: 20px;
+			}
+			.media-body {
+				padding: 6px 0;
+				.chitiet_sp_l_gia_sp {
+					color: #ff0000;
+					margin-left: 15px;
+					span {
+						font-size: 12px;
+						color: #333;
+						text-decoration: line-through;
+					}
+				}
+			}
+		}
+	}
+	.chitiet_sp_r_1 {
+		.chitiet_sp_r_info_main {
+			h1 {
+				font-size: 18px;
+				a {
+					color: #333;
+					
+					span {
+						color: #ff0000;
+						font-weight: normal;
+					}
+				}
+			}
+			hr {
+				margin: 10px 0;
+			}
+			.chitiet_sp_r_info {
+				p {
+					margin-bottom: 5px;
+					span {
+						font-size: 18px;
+						color: #ff0000;
+					}
+					.xx {
+						font-size: 14px;
+						text-decoration: line-through;
+						color: #333;
+					}
+				}
+			}
+			.chitiet_sp_r_motangan {
+				h5 {
+					font-size: 14px;
+					text-transform: uppercase;
+				}
+				p {
+					margin-bottom: 0;
+					font-size: 14px;
+				}
+			}
+			.chitiet_sp_r_soluong {
+				margin-top: 15px;
+				margin-bottom: 10px;
+				.tang_giam {
+					float: left;
+					ul {
+						font-size: 18px;
+						margin-bottom: 0;
+						li {
+							padding: 0px 6px;
+							
+							margin:0 3px;
+							a {
+								background:none;
+								text-decoration: none;
+							}
+							&:first-child {
+								background: #ddd;
+								margin-right: 0;
+							}
+							&:last-child {
+								margin-left: 0;
+								background: #ddd;
+							}
+						}
+					}
+				}
+				.ct_muahang {
+					float: right;
+					a {
+						padding: 4px 10px;
+						background:$dotim;
+						border-radius: 20px;
+						text-decoration: none;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	
+	.chitiet_sp_r_2 {
+		margin-top: 15px;
+		.chitietsp_r_2_telephone {
+			border-top: 1px solid #ddd;
+			border-bottom: $vien;
+			margin-left: 0;
+			margin-right: 0;
+			padding: 7px 0;
+			// height: 100%;
+			.col-md-6 {
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+
+				.ct-sp-r-hotro {
+					margin-left: 20px;
+					p {
+
+						margin-bottom: 0;
+						&:last-child {
+							font-size: 20px;
+							color: #ff0000;
+							line-height: 24px;
+						}
+					}
+				}
+				.ct-sp-r-messenger {
+					p {
+						margin-bottom: 0;
+						margin-top: 10px;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.chitiet_sp_r_3 {
+		border: $vien;
+		padding-left: 20px;
+		padding-top: 20px;
+		.chitiet_sp_r_tieude {
+			h4 {
+				font-size: 18px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+			hr {
+				width: 6%;
+				height: 2px;
+				background: $dotim;
+				margin-top: 8px;
+			}
+		}
+		.chitiet_sp_r_noidung {
+			line-height: 24px;
+		}
+	}
+
+
+	.fb-comments.fb-all-2 {
+	  background:red;
+    	span {
+		    height:  500px;
+		    iframe#ffc8a190c02308 {
+				left:  0;
+			}
+		}
+
+
+	}
+	.chitiet_sp_r_5 {
+		padding-top: 30px;
+		@extend #banchay-sp;
+		.banchay-sp {
+			background:#fafbfd;
+			border-top:none;
+			padding: 0;
+			.ds-sp {
+				h3 {
+					font-size: 18px;
+				}
+				hr {
+					width: 6%;
+					height: 2px;
+					background:$dotim; 
+				}
+
+			}
+			.row {
+				padding-left: 10px;
+				padding-right: 10px;
+				.col-sm-3 {
+
+					padding-left: 5px;
+					padding-right: 5px;
+					.card {
+						background:#fafbfd;
+					}
+				}
+			}
+		}
+	}
+}
+
+#tintuc-sp {
+	.row {
+		padding-top: 30px;
+		padding-bottom: 80px;
+		.col-md-10 {
+			.tieude-sp-tintuc {
+				h4 {
+					text-transform: uppercase;
+				}
+				hr {
+					width: 10%;
+					height: 2px;
+					background: $dotim;
+					margin: 0 auto;
+					margin-bottom: 30px;
+				}
+			}
+			#demo {
+				.carousel-indicators {
+					bottom: -40px;
+				}
+				.carousel-inner {
+					border-top-left-radius: 120px;
+					border-bottom-left-radius: 120px;
+					border-top-right-radius: 20px;
+					border-bottom-right-radius: 20px;
+					.carousel-item {
+						.tintuc-img-girl-round {
+							// width: 200%;
+							img {
+								width: 200%;
+								// border: 2px solid;
+								border-top-left-radius: 110px;
+								border-bottom-left-radius: 110px;
+								border-top-right-radius: 110px;
+								border-bottom-right-radius: 110px;
+								border: 5px solid #cac7d3;
+								
+							}
+						}
+						background:white;
+						.carousel-caption {
+							width: 70%;
+							color:#333;
+							left: 25%;
+							text-align: left;
+							top: 0px;
+							p {
+								padding-left: 20px;
+								margin-bottom: 0;
+								&:first-child {
+									padding-left: 0;
+									
+								}
+								&:last-child {
+									padding-left: 500px;
+									margin-left: 200px;
+								}
+								i {
+									word-spacing: 2px;
+									letter-spacing: 1px;
+								}
+							}
+							h3 {
+								font-size: 16px;
+							}
+							.phay-r {
+								padding-left: 100%;
+								margin-bottom: 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.fb_hide_iframes iframe {
+    // position: relative;
+    left:0;
+}
+// end chi tiết sản phẩm
+.owl-carousel.owl-all-2 {
+    position: relative;
+    button.owl-prev {
+        position: absolute;
+        left: -19px;
+        top: 13%;
+        span {
+            font-size: 30px;
+        }
+    }
+    button.owl-next {
+        position: absolute;
+       	right: -19px;
+		top: 13%;
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+.owl-carousel.owl-all {
+    position: relative;
+    button.owl-prev {
+        position: absolute;
+        left: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+    button.owl-next {
+        position: absolute;
+        right: -40px;
+        top: 25%;
+        span {
+            background: #d5d5d5;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 100%;
+            padding: 0px 13px 4px 12px;
+            font-weight: bold;
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 1199.98px) {
+	#chitiet_sp {
+		.chitiet_sp_l_2 {
+		
+			.media {
+				a {
+					p {
+						margin-left: 10px;
+					}
+				}
+				&:last-child {
+					margin-bottom: 20px;
+				}
+				.media-body {
+					padding: 0;
+					.chitiet_sp_l_gia_sp {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		.chitiet_sp_r_1 {
+			.row {
+				.col-lg-6 {
+					a {
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.chitiet_sp_r_info_main {	
+				.chitiet_sp_r_soluong {
+					margin-top: 15px;
+					margin-bottom: 10px;
+					.tang_giam {
+						float: left;
+						ul {
+							font-size: 16px;
+							margin-bottom: 0;
+							li {
+								padding: 0px 4px;
+								margin:0px;
+							}
+						}
+					}
+					.ct_muahang {
+						a {
+							padding: 4px 2px;
+						}
+					}
+				}
+			}
+		}
+		
+		.chitiet_sp_r_2 {
+			margin-top: 15px;
+			.chitietsp_r_2_telephone {
+				border-top: 1px solid #ddd;
+				border-bottom: $vien;
+				margin-left: 0;
+				margin-right: 0;
+				padding: 2px 0;
+				// height: 100%;
+				.col-md-6 {
+					&:first-child {
+						padding-left: 0;
+					}
+					&:last-child {
+						padding-right: 0;
+					}
+
+					.ct-sp-r-hotro {
+						margin-left: 5px;
+						p {
+
+							margin-bottom: 0;
+							&:last-child {
+								font-size: 18px;
+							}
+						}
+					}
+					.ct-sp-r-messenger {
+						p {
+							
+							margin-top: 0px;
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#tintuc-sp {
+		.row {
+			.col-md-10 {
+				#demo {
+					.carousel-inner {
+						.carousel-item {
+							.carousel-caption {
+								left: 28%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+@media (max-width: 991.98px) {
+	#chitiet_sp {
+	
+		.chitiet_sp_l_2 {
+			.media {
+				.media-body {
+					iframe {
+						width: 176px;
+					}
+				}
+			}
+		}
+		.chitiet_sp_r_1 {
+			.col-lg-6 {
+				a {
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.chitiet_sp_r_info_main {
+				padding-top: 20px;
+				.chitiet_sp_r_soluong {
+					.tang_giam {
+						float: left;
+						ul {
+							font-size: 16px;
+							margin-bottom: 0;
+							li {
+								padding: 0px 10px;
+							}
+						}
+					}
+					.ct_muahang {
+						a {
+							padding: 7px 15px;
+						}
+					}
+				}
+			}
+		}
+		
+		.chitiet_sp_r_2 {
+			margin-top: 15px;
+			.chitietsp_r_2_telephone {
+				padding: 7px 0;
+				.col-md-6 {
+					.ct-sp-r-hotro {
+						margin-left: 20px;
+						p {
+							&:last-child {
+								font-size: 20px;
+							}
+						}
+					}
+					.ct-sp-r-messenger {
+						p {
+							
+							margin-top: 10px;
+							margin-left: 15px;
+							
+						}
+					}
+				}
+			}
+		}
+
+		.chitiet_sp_r_3 {
+			margin-top: 20px;
+			.chitiet_sp_r_noidung {
+				line-height: 24px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+
+		.fb-comments.fb-all-2 {
+		  background:red;
+	    	span {
+			    height:  500px;
+			    iframe#ffc8a190c02308 {
+					left:  0;
+				}
+			}
+
+
+		}
+	}
+	#tintuc-sp {
+		.row {
+			.col-md-10 {
+				#demo {
+					.carousel-inner {
+						.carousel-item {
+							.carousel-caption {
+								width: 60%;
+								left: 36%;
+								top: -27px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+@media (max-width: 767.98px) {
+	#tintuc-sp {
+		.row {
+			.col-md-10 {
+				#demo {
+					.carousel-inner {
+						.carousel-item {
+							.tintuc-img-girl-round {
+								img {
+									width: 135%;
+								}
+							}
+							.carousel-caption {
+							    width: 69%;
+							    left: 26%;
+							    top: -23px;
+								p {
+								
+										font-size: 11px;
+										line-height: 14px;
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+@media (max-width: 575.98px) {
+	#tintuc-sp {
+		display: none;
+	}
+	#chitiet_sp {
+	
+		.chitiet_sp_l_2 {
+			.media {
+				.media-body {
+					iframe {
+						width: 176px;
+					}
+				}
+			}
+		}
+		.chitiet_sp_r_1 {
+			.chitiet_sp_r_info_main {
+				.chitiet_sp_r_soluong {
+					.tang_giam {
+						float: left;
+						ul {
+							
+							li {
+								padding: 0px 5px;
+							}
+						}
+					}
+					.ct_muahang {
+						a {
+							padding: 5px 5px;
+						}
+					}
+				}
+			}
+		}
+	
+	}
+}
+@media (max-width: 460px) {
+	#chitiet_sp {
+		.chitiet_sp_r_1 {
+			.chitiet_sp_r_info_main {
+				.chitiet_sp_r_soluong {
+					.tang_giam {
+						float: left;
+						ul {
+							
+							li {
+								padding: -2px 5px;
+							}
+						}
+					}
+					.ct_muahang {
+						a {
+							padding: 3px 2px;
+						}
+					}
+				}
+			}
+		}
+		.chitiet_sp_r_2 {
+			margin-top: 15px;
+			.chitietsp_r_2_telephone {
+				padding: 7px 0;
+				.col-md-6 {
+					.ct-sp-r-hotro {
+						margin-left: 5px;
+						p {
+							&:last-child {
+								font-size: 18px;
+							}
+						}
+					}
+					.ct-sp-r-messenger {
+						p {
+							
+							margin-top: 0px;
+							margin-left: 5px;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// End responsive

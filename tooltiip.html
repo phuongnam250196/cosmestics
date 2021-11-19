@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	   <script>
+    $(function(){
+        var $tooltip;
+        var $host=$(".tooltipHost");
+        var timer;
+        $host.mouseenter(function(event)
+        {
+            $tooltip=$(this).children(".tooltip");
+            $tooltip.css("left",event.pageX)
+                .css("top", event.pageY);
+            $tooltip.fadeTo(0,1);
+            $tooltip.show();
+            timer = setTimeout(function() {
+                $tooltip.fadeOut()
+                }, 1500);
+        });
+        $host.mousemove(function(event) {
+             $tooltip.stop().animate({left: event.pageX, top: event.pageY}, 20)
+        });
+     
+        $host.mouseleave(function() {
+            clearTimeout(timer);
+            $tooltip.stop();
+            $tooltip.hide();
+        });
+    });
+    </script>
+<style type="text/css">
+.tooltipHost {
+    
+    border:1px solid black;
+    margin-top:5px;
+    text-align:center;
+}
+ 
+.tooltip {
+    display:none;
+    background:#FDFDC7;
+    margin-left:8px;
+    width:230px;
+    border:1px solid #cccccc;
+}
+.tooltip p {
+  margin-bottom: 0;
+}
+ 
+.tooltipHost:hover .tooltip{
+    /* position:absolute; */
+    display: block;
+}
+</style>
+</head>
+<body>
+	 <div class="container">
+           <div class="row">
+             <div class="card tooltipHost">
+             <a href="#"><img class="card-img-top" src="images/kemduongtrang.png" alt="Card image"></a>
+            <div class="card-body text-center">
+                <h4 class="card-title"><a href="#">Sữa rửa mặt Perfect Whip</a></h4>
+                <p class="card-text">(Xuất xứ: Nhật Bản)</p>
+                <p class="card-text text-danger">Giá lẻ: 300.000đ</p>
+                <p class="card-text">Mua từ 3sp: 280k/1sp</p>
+            </div>
+            <span>20%</span>
+             <span class="tooltip">
+                          <p>- Tên: Sửa rửa mặt Perfect Whip</p>
+                          <p>- Xuất xứ: Nhật bản</p>
+                          <p>- Giá lẻ: 300.000đ</p>
+                          <p>- Giá từ 3 sp: 280.000đ/sp</p>
+                          <p>- Quy cách: 4 tuýp/Bộ</p>
+                          <hr>  
+                          <p>Công dụng: Giải pháp tối ưu cho da nhiều dầu, bóng nhờn, kiềm dầu tối...</p>
+                        </span>
+                         
+         </div>
+           </div>
+         </div>
+</body>
+</html>
